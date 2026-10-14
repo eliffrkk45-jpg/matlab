@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b2545" />
+  <title>Matematik Kaşifi | 11. Sınıf</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Matematik Kaşifi ana sayfa">
+      <span class="brand-mark">∠</span><span>matematik<span class="brand-green">kaşifi</span><small>11. SINIF • GEOMETRİ LABORATUVARI</small></span>
+    </a>
+    <nav class="desktop-nav">
+      <a href="#kesfet">Keşfet</a><a href="#konular">Konular</a><a href="#arastirma">Araştırma</a><a href="#ilerleme">İlerlemem</a>
+    </nav>
+    <div class="auth-actions">
+      <span id="userBadge" class="user-badge hidden"></span>
+      <button id="loginOpen" class="btn btn-outline">Giriş yap</button>
+      <button id="logoutBtn" class="btn btn-outline hidden">Çıkış</button>
+      <button id="signupOpen" class="btn btn-primary">Ücretsiz başla <span>↗</span></button>
+    </div>
+    <button id="mobileMenu" class="mobile-menu" aria-label="Menüyü aç">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="kesfet">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> MERAK ET • KEŞFET • UYGULA</div>
+        <h1>Formülleri ezberleme.<br><span class="gradient-text">Geometriyi keşfet.</span></h1>
+        <p class="hero-lead">11. sınıf geometri konularını araştırarak, deneyerek ve oyunlarla öğren. Her şeklin ardındaki matematiksel bağlantıyı kendin bul.</p>
+        <div class="hero-actions"><a href="#konular" class="btn btn-primary btn-large">Keşfe başla <span>→</span></a><a href="#arastirma" class="btn btn-ghost btn-large">Araştırma görevleri <span>⌕</span></a></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>∠</span><span>π</span><span>√</span></div><p><strong>Aktif öğrenme yaklaşımı</strong><br><small>İncele • Tahmin et • Gerekçelendir</small></p></div>
+      </div>
+      <div class="hero-art">
+        <div class="art-glow"></div><div class="floating-chip chip-a">A = (a + c) · h / 2</div><div class="floating-chip chip-b">Dörtgenler Lab'ı</div>
+        <svg class="hero-geometry" viewBox="0 0 500 380" role="img" aria-label="Yamuk, paralelkenar ve eşkenar dörtgen çizimleri">
+          <defs><linearGradient id="shapeGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#54e6b3"/><stop offset="100%" stop-color="#5a9cff"/></linearGradient></defs>
+          <g class="orbit orbit-one"><ellipse cx="250" cy="190" rx="210" ry="142" fill="none" stroke="#77cdbb" stroke-opacity=".25" stroke-dasharray="4 9"/></g>
+          <g class="shape-float"><polygon points="130,105 310,105 365,260 75,260" fill="url(#shapeGrad)" fill-opacity=".15" stroke="url(#shapeGrad)" stroke-width="3"/>
+          <line x1="130" y1="105" x2="130" y2="260" stroke="#9af3d0" stroke-dasharray="5 5" stroke-width="2"/>
+          <line x1="130" y1="260" x2="365" y2="260" stroke="#9af3d0" stroke-width="2"/>
+          <text x="215" y="91" fill="#b4f7dc" font-size="15" font-weight="700">a</text><text x="215" y="285" fill="#b4f7dc" font-size="15" font-weight="700">c</text><text x="112" y="190" fill="#b4f7dc" font-size="15" font-weight="700">h</text></g>
+          <g class="mini-diamond"><polygon points="355,75 405,130 355,185 305,130" fill="#63a8ff" fill-opacity=".15" stroke="#69b1ff" stroke-width="2.5"/><line x1="305" y1="130" x2="405" y2="130" stroke="#69b1ff" stroke-opacity=".5"/></g>
+          <g class="mini-parallel"><polygon points="55,50 135,50 160,95 80,95" fill="#52d9ae" fill-opacity=".12" stroke="#52d9ae" stroke-width="2"/></g>
+          <circle cx="250" cy="190" r="5" fill="#e2fff4"/><circle cx="130" cy="105" r="4" fill="#e2fff4"/><circle cx="365" cy="260" r="4" fill="#e2fff4"/>
+        </svg>
+        <div class="art-caption"><span class="caption-icon">✳</span><span><strong>Matematiksel düşünme</strong><small>Sonuca değil, keşif sürecine odaklan.</small></span></div>
+      </div>
+      <div class="hero-bottomline"><span>01 / ÖĞRENME YOLCULUĞUN</span><span class="line"></span><span>11. SINIF • DÖRTGENLER</span></div>
+    </section>
+
+    <section class="stats section-wrap" id="ilerleme">
+      <div class="stat-card"><span class="stat-icon mint">✦</span><div><strong id="xpValue">0 XP</strong><small>Öğrenme puanın</small></div></div>
+      <div class="stat-card"><span class="stat-icon blue">◷</span><div><strong id="streakValue">0 gün</strong><small>Öğrenme serin</small></div></div>
+      <div class="stat-card"><span class="stat-icon lilac">✓</span><div><strong id="completedValue">0 / 3</strong><small>Tamamlanan konu</small></div></div>
+      <div class="stat-card progress-stat"><div class="progress-label"><strong>Keşif yolculuğun</strong><span id="progressPercent">0%</span></div><div class="progress-track"><span id="progressBar"></span></div><small>Her etkinlik seni bir adım ileri taşır.</small></div>
+    </section>
+
+    <section class="section-wrap topics-section" id="konular">
+      <div class="section-heading"><div><span class="section-kicker">ÖĞRENME ALANI</span><h2>Bugün neyi <span class="gradient-text">keşfediyoruz?</span></h2><p>Bir şekli incele, özelliklerini bul ve kendi çıkarımını oluştur.</p></div><span class="section-number">01 — 03</span></div>
+      <div class="topic-grid">
+        <article class="topic-card trapezoid-card">
+          <div class="topic-top"><span class="topic-tag">ŞEKİL 01</span><span class="topic-symbol">↔</span></div>
+          <div class="topic-illustration"><svg viewBox="0 0 240 120" aria-label="Yamuk çizimi"><polygon points="65,25 175,25 215,95 25,95" fill="#55dfb2" fill-opacity=".12" stroke="#58dcb2" stroke-width="3"/><line x1="65" y1="25" x2="65" y2="95" stroke="#58dcb2" stroke-dasharray="4 4"/><text x="113" y="18" fill="#8af0cf" font-size="12">a</text><text x="115" y="113" fill="#8af0cf" font-size="12">c</text></svg></div>
+          <h3>Yamuk</h3><p>Paralel kenarları ve alan ilişkisini araştır.</p><div class="topic-meta"><span>◉ Keşif + mini oyun</span><span>~ 12 dk</span></div>
+          <button class="btn btn-card" data-topic="yamuk">Laboratuvara gir <span>→</span></button>
+        </article>
+        <article class="topic-card parallelogram-card">
+          <div class="topic-top"><span class="topic-tag">ŞEKİL 02</span><span class="topic-symbol">▱</span></div>
+          <div class="topic-illustration"><svg viewBox="0 0 240 120" aria-label="Paralelkenar çizimi"><polygon points="70,22 210,22 170,98 30,98" fill="#62a5ff" fill-opacity=".13" stroke="#65aaff" stroke-width="3"/><line x1="70" y1="22" x2="70" y2="98" stroke="#65aaff" stroke-dasharray="4 4"/><line x1="70" y1="98" x2="210" y2="22" stroke="#65aaff" stroke-opacity=".5"/></svg></div>
+          <h3>Paralelkenar</h3><p>Kenar, açı ve köşegen ilişkilerini keşfet.</p><div class="topic-meta"><span>◉ İncele + eşleştir</span><span>~ 15 dk</span></div>
+          <button class="btn btn-card" data-topic="paralelkenar">Laboratuvara gir <span>→</span></button>
+        </article>
+        <article class="topic-card rhombus-card">
+          <div class="topic-top"><span class="topic-tag">ŞEKİL 03</span><span class="topic-symbol">◇</span></div>
+          <div class="topic-illustration"><svg viewBox="0 0 240 120" aria-label="Eşkenar dörtgen çizimi"><polygon points="120,10 205,60 120,110 35,60" fill="#a78bfa" fill-opacity=".13" stroke="#b19aff" stroke-width="3"/><line x1="120" y1="10" x2="120" y2="110" stroke="#b19aff" stroke-dasharray="4 4"/><line x1="35" y1="60" x2="205" y2="60" stroke="#b19aff" stroke-dasharray="4 4"/></svg></div>
+          <h3>Eşkenar dörtgen</h3><p>Eşit kenarların ve dik köşegenlerin izini sür.</p><div class="topic-meta"><span>◉ Soruştur + puan kazan</span><span>~ 15 dk</span></div>
+          <button class="btn btn-card" data-topic="eskenar">Laboratuvara gir <span>→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="inquiry-section" id="arastirma"><div class="section-wrap inquiry-layout">
+      <div class="inquiry-copy"><span class="section-kicker">MERAKIN PEŞİNDEN GİT</span><h2>Araştır, dene,<br><span class="gradient-text">kendi sonucuna ulaş.</span></h2><p>Maarif Modeli'nin araştırma, akıl yürütme ve matematiksel iletişim yaklaşımından ilham alan görevlerde hazır cevabı görmek yerine ipuçlarını kullan.</p>
+        <ul class="inquiry-list"><li><span>01</span><div><strong>Problemi fark et</strong><small>Şekilde değişen ve sabit kalan özellikleri belirle.</small></div></li><li><span>02</span><div><strong>Varsayım oluştur</strong><small>“Eğer... ise...” diyerek tahminini yaz.</small></div></li><li><span>03</span><div><strong>Kanıtla ve açıkla</strong><small>Bulduğun ilişkiyi matematik diliyle ifade et.</small></div></li></ul>
+      </div>
+      <div class="mission-card"><div class="mission-header"><span class="mission-icon">⌕</span><span class="topic-tag">ARAŞTIRMA GÖREVİ • 01</span><span class="mission-xp">+50 XP</span></div><h3>Alan dedektifi</h3><p>Bir yamukta iki taban uzunluğu sabitken yüksekliği iki katına çıkarırsan alan nasıl değişir?</p><div class="mission-choices" id="missionChoices"><button data-answer="a">Değişmez</button><button data-answer="b">İki katına çıkar</button><button data-answer="c">Yarıya iner</button></div><div id="missionFeedback" class="feedback" aria-live="polite">Önce bir tahmin yap. Sonra alan bağıntısıyla gerekçeni kontrol et.</div><button id="missionExplain" class="btn btn-primary full-width">İpucunu aç <span>↗</span></button></div>
+    </div></section>
+
+    <section class="section-wrap methods-section"><div class="section-heading"><div><span class="section-kicker">ÇOKLU ÖĞRENME TEKNİKLERİ</span><h2>Öğrenme biçimini <span class="gradient-text">çeşitlendir.</span></h2><p>Bilgiyi farklı yollarla kullanmak, kalıcı öğrenmeyi destekler.</p></div></div>
+      <div class="method-grid"><article class="method-card"><span class="method-icon">◈</span><h3>Görsel keşif</h3><p>Şekillerin parçalarını incele, özellikleri karşılaştır.</p><span class="method-label">GÖRSEL ÖĞRENME</span></article><article class="method-card"><span class="method-icon">⌘</span><h3>Aktif hatırlama</h3><p>İpucu almadan soruyu yanıtla, sonra açıklamayı gör.</p><span class="method-label">KENDİNİ SINAMA</span></article><article class="method-card"><span class="method-icon">⇄</span><h3>Eşleştir ve bağ kur</h3><p>Özellikleri doğru dörtgenle eşleştir.</p><span class="method-label">OYUNLAŞTIRMA</span></article><article class="method-card"><span class="method-icon">✎</span><h3>Kendi cümlenle açıkla</h3><p>Bir matematiksel çıkarımını kısa bir not olarak kaydet.</p><span class="method-label">MATEMATİKSEL İLETİŞİM</span></article></div>
+    </section>
+
+    <section class="section-wrap journal-section"><div class="journal-card"><div><span class="section-kicker">ÖĞRENME GÜNLÜĞÜ</span><h2>Bugün ne keşfettin?</h2><p>Bir cümleyle yaz. Bu not bu cihazdaki tarayıcıda saklanır.</p></div><div class="journal-entry"><textarea id="journalNote" maxlength="500" placeholder="Örneğin: Paralelkenarda karşılıklı kenarlar..."></textarea><div class="journal-bottom"><span id="noteStatus">Henüz kaydedilmedi</span><button id="saveNote" class="btn btn-primary">Notumu kaydet <span>✓</span></button></div></div></div></section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#"><span class="brand-mark">∠</span><span>matematik<span class="brand-green">kaşifi</span><small>MERAKLA ÖĞREN, BİLGİYLE BÜYÜ.</small></span></a><p>Öğrenme yolculuğunun her adımında merakını koru.</p><span>© 2026 Matematik Kaşifi • Eğitim amaçlı prototip</span></footer>
+
+  <div class="modal-backdrop hidden" id="authModal" role="dialog" aria-modal="true" aria-labelledby="authTitle"><div class="modal auth-modal"><button class="modal-close" id="authClose" aria-label="Kapat">×</button><div class="modal-mark">∠</div><h2 id="authTitle">Öğrenme yolculuğuna katıl</h2><p id="authSubtitle">İlerlemeni hesabınla farklı cihazlarda sürdür.</p><div id="authError" class="auth-error hidden"></div><button id="googleLogin" class="btn google-btn"><span class="google-g">G</span> Google ile devam et</button><div class="or-divider"><span>veya e-posta ile</span></div><form id="authForm"><label for="authEmail">E-posta adresi</label><input id="authEmail" type="email" placeholder="ornek@eposta.com" required autocomplete="email"><label for="authPassword">Şifre</label><input id="authPassword" type="password" placeholder="En az 6 karakter" minlength="6" required autocomplete="current-password"><button id="authSubmit" class="btn btn-primary full-width" type="submit">Giriş yap</button></form><p class="auth-switch"><span id="switchText">Hesabın yok mu?</span> <button id="switchAuth">Kayıt ol</button></p><small class="privacy-note">Şifren bu sitede saklanmaz; Firebase Authentication tarafından yönetilir.</small></div></div>
+
+  <div class="modal-backdrop hidden" id="lessonModal" role="dialog" aria-modal="true" aria-labelledby="lessonTitle"><div class="modal lesson-modal"><button class="modal-close" id="lessonClose" aria-label="Kapat">×</button><div id="lessonContent"></div></div></div>
+  <div id="toast" class="toast" role="status"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
